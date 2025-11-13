@@ -36,6 +36,7 @@ def step():
             min_idx=i
         if i==n:
             done=True
-        fase = "buscar"
+        else:
+            fase = "buscar"
     return {"a": min_idx, "b": i, "swap": swap, "done": done}
 
