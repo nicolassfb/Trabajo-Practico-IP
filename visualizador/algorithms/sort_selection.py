@@ -42,6 +42,5 @@ def step():
             done=True
         else:
             fase = "buscar"
-    print(f"fase={fase}, i={i}, j={j}, min_idx={min_idx}, swap={swap}")
     return {"a": a, "b": b, "swap": swap, "done": done}
 
