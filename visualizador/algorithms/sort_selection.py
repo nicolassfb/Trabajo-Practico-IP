@@ -17,19 +17,23 @@ def step():
     global items, n, i, j, min_idx, fase
     swap=False
     done=False
+    a = min_idx
+    b = i
     if fase=="buscar":
         if j<n:
             if items[j]<items[min_idx]:
-                min_idx=j
+                min_idx =j
             j+=1
-        else:
+        if j>=n:
             fase="swap"
+            a = min_idx
+            b = i
     if fase=="swap":
         if i<n:
             if min_idx!=i:
-                aux=items[min_idx]
-                items[min_idx]=items[i]
-                items[i]=aux
+                aux=items[a]
+                items[a]=items[b]
+                items[b]=aux
                 swap=True
             i+=1
             j=i+1
@@ -38,5 +42,6 @@ def step():
             done=True
         else:
             fase = "buscar"
-    return {"a": min_idx, "b": i, "swap": swap, "done": done}
+    print(f"fase={fase}, i={i}, j={j}, min_idx={min_idx}, swap={swap}")
+    return {"a": a, "b": b, "swap": swap, "done": done}
 
