@@ -3,7 +3,7 @@ Trabajo Práctico Final: Algoritmos de Ordenamiento
 Introducción a la Programación – Segundo Semestre 2025
 
 
- Integrante
+ Integrante:
 
 ⦁	Farias Nicolás  
 
@@ -17,7 +17,7 @@ Introducción a la Programación – Segundo Semestre 2025
 
 
 
- Descripción
+ Descripción:
 
 Este trabajo práctico contiene las implementaciones de los algoritmos de ordenamiento:
 
